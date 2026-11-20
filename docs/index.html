@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Site Name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 1. NAVBAR -->
+<header class="navbar">
+    <a class="logo" href="#home">YourName</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">Menu</button>
+    <nav id="nav">
+        <a href="#about">About</a>
+        <a href="#items">Items</a>
+        <a href="#form">Contact</a>
+    </nav>
+</header>
+
+<!-- 2. HERO -->
+<section class="hero" id="home">
+    <h1>Main headline goes here</h1>
+    <p>One short line that says what this site does.</p>
+    <a class="btn" href="#items">Browse now</a>
+</section>
+
+<!-- 3. ABOUT -->
+<section class="section" id="about">
+    <h2>About</h2>
+    <p>
+        Write 2 to 3 sentences here.
+    </p>
+    <!-- Engineering: about the college / department
+         Travel:      about the travel agency
+         Food:        about the restaurant
+         Portfolio:   about you -->
+</section>
+
+<!-- 4. ITEMS (cards) -->
+<section class="section alt" id="items">
+    <h2>Items</h2>
+    <!-- Engineering: courses (CSE, ECE, Mechanical)
+         Travel:      destinations (Goa, Manali, Kerala)
+         Food:        dishes (Biryani, Dosa, Pizza)
+         Portfolio:   projects (Project 1, 2, 3) -->
+    <div class="grid">
+
+        <div class="card">
+            <div class="card-img"></div>
+            <h3>Item One</h3>
+            <p>Short description.</p>
+            <p class="price">₹1000</p>
+            <button class="btn small choose" data-name="Item One">Choose</button>
+        </div>
+
+        <div class="card">
+            <div class="card-img"></div>
+            <h3>Item Two</h3>
+            <p>Short description.</p>
+            <p class="price">₹2000</p>
+            <button class="btn small choose" data-name="Item Two">Choose</button>
+        </div>
+
+        <div class="card">
+            <div class="card-img"></div>
+            <h3>Item Three</h3>
+            <p>Short description.</p>
+            <p class="price">₹3000</p>
+            <button class="btn small choose" data-name="Item Three">Choose</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- 5. FORM -->
+<section class="section" id="form">
+    <h2>Get in touch</h2>
+    <!-- Engineering: Register for a course
+         Travel:      Book a trip
+         Food:        Place an order
+         Portfolio:   Contact me -->
+    <form id="mainForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="choice">Selected item</label>
+        <select id="choice" required>
+            <option value="">-- Select --</option>
+            <option>Item One</option>
+            <option>Item Two</option>
+            <option>Item Three</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4"></textarea>
+
+        <button class="btn" type="submit">Send</button>
+        <p id="status" role="status"></p>
+    </form>
+</section>
+
+<!-- 6. FOOTER -->
+<footer>
+    <p>&copy; 2026 YourName. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
